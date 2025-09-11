@@ -1,8 +1,5 @@
 {
   "name": "Python & Jupyter (Custom)",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
   "customizations": {
     "vscode": {
       "extensions": [
