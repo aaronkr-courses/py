@@ -1,6 +1,7 @@
 jupyter
 notebook
 jupyterlab
+ipykernel
 matplotlib
 numpy
 pandas
