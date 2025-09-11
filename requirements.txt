@@ -1,7 +1,5 @@
 jupyter
-notebook
-jupyterlab
-ipykernel
+ipywidgets
 matplotlib
 numpy
 pandas
@@ -11,3 +9,4 @@ torch
 torchvision
 torchaudio
 seaborn
+tqdm
