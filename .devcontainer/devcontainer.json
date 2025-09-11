@@ -1,17 +1,20 @@
 {
-  "name": "Python Jupyter ML",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
   "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
-        "ms-python.python",
-        "ms-toolsai.jupyter-keymap",
-        "ms-toolsai.jupyter-renderers",
-        "ms-python.vscode-pylance"
+        "ms-python.python"
       ]
     }
-  },
-  "postCreateCommand": "pip install --upgrade pip && pip install ipykernel && pip install -r requirements.txt",
-  "remoteUser": "vscode"
+  }
 }
